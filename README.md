@@ -49,7 +49,7 @@ The system addresses four main objectives:
 ├── maps/
 ├── docs/
 └── README.md
-
+```
 Installation
 
 This project was developed using ROS 2 and Python.
@@ -68,18 +68,18 @@ Running the Project
 A typical workflow is:
 
 1. Launch the TurtleBot3 simulation
-   ```bash
-    export TURTLEBOT3_MODEL=burger
-    ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
-   ```
+```bash
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
+```
 2. Run the autonomous exploration module
 ```bash
 ros2 run autonomous_exploration <exploration_node>
  ```
 3. Run the main robot controller / sanitization module
-   ```bash
+```bash
 ros2 run my_robot_controller <controller_node>
- ```
+```
 5. Visualize results in RViz
 
 Use RViz to inspect:
